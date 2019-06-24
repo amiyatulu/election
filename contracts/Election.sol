@@ -9,8 +9,7 @@ contract Election {
         string name;
         uint voteCount;
     }
-    
-    
+
     // Store candidate
     // Fetch Candidate
     mapping(uint => Candidate) public candidates;
@@ -18,7 +17,6 @@ contract Election {
      // Store candidate count
     uint public candidatesCount;
 
-    
     constructor () public {
        addCandidate("Candidate 1");
        addCandidate("Candidate 2");
